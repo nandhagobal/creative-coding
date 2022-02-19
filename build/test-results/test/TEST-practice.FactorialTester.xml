@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="practice.FactorialTester" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-02-18T16:19:57" hostname="NANDHA-GOBAL" time="0.026">
+  <properties/>
+  <testcase name="shouldReturnSixIfThreeIsGiven()" classname="practice.FactorialTester" time="0.021"/>
+  <testcase name="shouldReturnOneIfZeroIsGiven()" classname="practice.FactorialTester" time="0.001"/>
+  <testcase name="shouldNotReturnZeroIfZeroIsGiven()" classname="practice.FactorialTester" time="0.001"/>
+  <testcase name="shouldReturnOneIfOneIsGiven()" classname="practice.FactorialTester" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
