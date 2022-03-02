@@ -4,22 +4,25 @@ import org.junit.jupiter.api.Test;
 
 public class FactorialTester {
     @Test
-    void shouldReturnOneIfZeroIsGiven() {
+    void shouldReturnFactoricalAsOneIfNumberIsGivenAsZero() {
         assert FactoricalFinder.factoricalOf(0)==1;
     }
-
     @Test
-    void shouldReturnOneIfOneIsGiven() {
+    void shouldReturnFactoricalAsZeroIfNumberIsGivenAsNegative(){
+        assert FactoricalFinder.factoricalOf(-1)==0;
+    }
+    @Test
+    void shouldReturnFactoricalAsOneIfNumberIsGivenAsOne() {
         assert FactoricalFinder.factoricalOf(1)==1;
     }
 
     @Test
-    void shouldNotReturnZeroIfZeroIsGiven() {
+    void shouldNotReturnFactorialAsZeroIfNumberIsGivenAsZero() {
         assert FactoricalFinder.factoricalOf(0)!=0;
     }
 
     @Test
-    void shouldReturnSixIfThreeIsGiven() {
+    void shouldReturnFactorialAsSixIfNumberIsGivenAsThree() {
         assert FactoricalFinder.factoricalOf(3)==6;
     }
 }

@@ -1,30 +1,29 @@
 
 public class Ball {
-    private float aPoint,bPoint,localMax,localMin;
+    private float xPointOfBall,yPointOfBall,diameter;
     private float speed;
-    public Ball(float aPoint,float bPoint,float localMax,float localMin,float speed) {
-        this.aPoint=aPoint;
-        this.bPoint=bPoint;
-        this.localMax=localMax;
-        this.localMin=localMin;
+    public Ball(float xPointOfBall,float yPointOfBall,float diameter,float speed) {
+        this.xPointOfBall=xPointOfBall;
+        this.yPointOfBall=yPointOfBall;
+        this.diameter=diameter;
         this.speed=speed;
     }
+
+    public float getXPointOfBall() {
+        return xPointOfBall;
+    }
+
+    public float getYPointOfBall() {
+        return yPointOfBall;
+    }
+
+    public float getDiameter() {
+        return diameter;
+    }
+
     public void incrementSpeed(){
-        aPoint+=speed;
-    }
-    public float getAPoint() {
-        return aPoint;
+        xPointOfBall+=speed;
     }
 
-    public float getBPoint() {
-        return bPoint;
-    }
 
-    public float getLocalMax() {
-        return localMax;
-    }
-
-    public float getLocalMin() {
-        return localMin;
-    }
 }
